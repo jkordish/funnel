@@ -1,20 +1,21 @@
 {
   "name": "funnel",
   "description": "Funnel metrics from various sources into StatsD",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Sean Coates <sean@seancoates.com>",
   "contributors": [
-    { "name": "Sean Coates", "email": "sean@seancoates.com" }
+    { "name": "Sean Coates", "email": "sean@seancoates.com" },
+    { "name": "Joseph Kordish", "email": "joe@unicornclouds.com" }
   ],
   "keywords": ["funnel","statsd","graphite","nagios","munin","json","cloudwatch","mongodb", "dbi"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/fictivekin/funnel.git"
+    "url": "https://github.com/jkordish/funnel.git"
   },
   "bin": {
     "metrics_funnel": "funnel.js"
   },
-  "files": ["funnel.js"],
+  "files": ["funnel.js", "version.js", "plugin"],
   "dependencies": {
     "munin-client": ">=0.1.0",
     "mongodb": ">=1.1.0",
